@@ -4,15 +4,12 @@
     padding:0;
     overflow: hidden;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 16px;   
+    color:#606060; 
 }
 
-a {
+a, a:link, a:visited, a:focus, a:active {
 text-decoration: none;
-}
-
-a:link, a:visited, a:focus, a:active {
-color: #000000;
 }
 
 a:hover {
@@ -20,9 +17,11 @@ text-decoration: underline;
 }
 
 h3{
-    color:#65686d;
+    color:#606060;
+    font-weight: bold;
     border:none;   
     text-align: center;
+    padding: 10px;
 }
 
 #conteneurPageGoogle{
@@ -33,8 +32,6 @@ h3{
     width: 1920px;
     height: 960px;
     background-color: white;
-    border: rgb(233, 233, 233) solid 1px;
-
 }
 
 header{
@@ -58,27 +55,29 @@ header ul{
 header ul li{
     display:flex;
     align-items: center;
-    color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     font-size: 14px;
     line-height: 16px;
     flex-direction: row;
     padding:10px 10px;
 }
 
+header ul li a{
+    color: black;
+}
+
 i{
-    font-size:20px;
+    font-size:16px;
     padding: 10px 10px;
     margin: 0;
 }
 
 i:hover{
-    font-size:20px;
-    background-color: rgb(199, 199, 199);
+    font-size:16px;
+    background-color: rgb(226, 226, 226);
     padding: 10px 10px;
     margin: 0;
 	border-radius: 50%;
-    color: rgb(0, 0, 0);
     vertical-align:middle;
 }
 
@@ -87,7 +86,7 @@ i:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 680px;
+    width:680px;
     height:300px;
 }
 
@@ -97,6 +96,10 @@ i:hover{
     background-color: #fff;
     border:2px solid #f3f4f5;
     border-radius: 30px;
+    background: url("img/search-solid.svg") no-repeat;
+    background-size: 16px;
+    background-position-x: 10px;
+    background-position-y: 8px;
 }
 
 .boutonsRecherche{
@@ -104,7 +107,7 @@ i:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width:320px;
     height:40px;
 }
 
@@ -127,7 +130,7 @@ i:hover{
     border:none;   
     text-align: center;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -138,10 +141,10 @@ header ul li a input.boutonConnexion{
 footer{
     display: flex;
     flex-direction:column;
-    align-items:flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
     width:1900px;
     height: 100px;
-    border:1px solid black;
     background-color: #f2f2f2;
 }
 
@@ -150,11 +153,10 @@ footer > div{
 }
 
 footer hr {
-    height: 1px;
     margin: 0;
-    padding: 0;
-    background-color: rgb(231, 231, 231);
-    border: 1;
+    padding: 0 10px;
+    text-align: center;
+    border: 1px #e7e7e7 solid;
     width: 100%;
 }
 
@@ -162,23 +164,23 @@ footer ul{
     display:flex;
     align-items: center;
     flex-direction: row;
-    width: 100%;
     list-style: none;
 }
 
 footer ul li{  
-    color: black;
     font-size: 14px;
     line-height: 16px;
     padding:10px 10px;
+}
+
+footer ul li a{  
+    color:#65686d;
 }
 
 .informationsUtiles{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height:100%;
-    border: 1px solid black;
-
+    width:1900px;
+    height: 50px;
 }
